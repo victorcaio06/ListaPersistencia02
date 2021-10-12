@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class list02 {
+public class list02_qt01 {
     public static void arqOrigenDestino(String nomeArqOrigem, String nomeArqDestino) throws IOException, FileNotFoundException {
         //File arq = new File(nomeArqOrigem);
         InputStream is = new FileInputStream(nomeArqOrigem);
