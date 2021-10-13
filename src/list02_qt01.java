@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class list02_qt01 {
     public static void arqOrigenDestino(String nomeArqOrigem, String nomeArqDestino) throws IOException, FileNotFoundException {
-        //File arq = new File(nomeArqOrigem);
         InputStream is = new FileInputStream(nomeArqOrigem);
         OutputStream os = new FileOutputStream(nomeArqDestino);
         byte[] byteRead = is.readAllBytes();
@@ -18,6 +17,6 @@ public class list02_qt01 {
         nomeArqDest= sc.nextLine();
         long tempoInicio = System.currentTimeMillis();
         arqOrigenDestino(nomeArqOrig, nomeArqDest);
-        System.out.println("O tempo da cópia foi de: "+(System.currentTimeMillis() - tempoInicio)+ " milisegundos");
+        System.out.println("O tempo da cópia foi de: "+(System.currentTimeMillis() - tempoInicio)+ " milisegundo(s)");
     }
 }
